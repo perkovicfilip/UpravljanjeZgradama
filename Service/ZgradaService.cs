@@ -114,5 +114,15 @@ namespace UpravljanjeZgradama.Service
             List<Stan> stanovi = stanRepo.VratiPoZgradi(z.Sifra);
             return stanovi.Any(uslov);
         }
+        public bool ZgradaJeUpravnikova(string sifra, string jmbgUpravnika)
+        {
+            Zgrada z = zgradaRepo.VratiPoSifri(sifra);
+            return z != null && z.JmbgUpravnika == jmbgUpravnika;
+        }
+
+        public Zgrada VratiPoSifri(string sifra)
+        {
+            return zgradaRepo.VratiPoSifri(sifra);
+        }
     }
 }

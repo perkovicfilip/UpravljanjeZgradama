@@ -20,15 +20,18 @@ namespace UpravljanjeZgradama.Service
             return true;
         }
 
-        public bool PostojiStan(string sifraZgrade, int brojStana)
+        public Stan VratiStan(string sifraZgrade, int brojStana)
         {
             List<Stan> stanovi = stanRepo.VratiPoZgradi(sifraZgrade);
             foreach (Stan s in stanovi)
-            {
                 if (s.BrojStana == brojStana)
-                    return true;
-            }
-            return false;
+                    return s;
+            return null;
+        }
+
+        public bool PostojiStan(string sifraZgrade, int brojStana)
+        {
+            return VratiStan(sifraZgrade, brojStana) != null;
         }
     }
 }

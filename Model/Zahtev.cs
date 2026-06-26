@@ -1,5 +1,4 @@
-﻿using System;
-using UpravljanjeZgradama.Model.Enums;
+﻿using UpravljanjeZgradama.Model.Enums;
 
 namespace UpravljanjeZgradama.Model
 {

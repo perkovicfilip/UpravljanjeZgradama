@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace UpravljanjeZgradama.Model
+﻿namespace UpravljanjeZgradama.Model
 {
     public class Stanar : Korisnik
     {
