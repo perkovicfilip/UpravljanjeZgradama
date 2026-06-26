@@ -1,1 +1,1 @@
-﻿
+﻿Administrator;0000000000000;admin@test.com;admin123;Glavni;Administrator;0600000000

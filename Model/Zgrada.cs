@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UpravljanjeZgradama.Model.Enums;
+﻿using UpravljanjeZgradama.Model.Enums;
 
 namespace UpravljanjeZgradama.Model
 {
